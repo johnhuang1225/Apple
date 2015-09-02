@@ -1,3 +1,3 @@
 # Apple
   - Mac
-  - iOS Develope
+  - iOS Develop
