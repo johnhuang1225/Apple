@@ -1,4 +1,25 @@
 
+
+/**
+ * 泛型的filter方法
+ */
+func myFilter<T>(source:[T], predicate:(T)->Bool ) -> [T] {
+	var result = [T]()
+	for i in source {
+		if predicate(i) {
+			result.append(i)
+		}
+	}
+	return result
+}
+
+var afterFilter = myFilter(Array(1...10),{ item -> Bool in
+	return item > 5
+})
+
+println(afterFilter)
+
+
 /**
  * 去除重複的泛型方法
  */
