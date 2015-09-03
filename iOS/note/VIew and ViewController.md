@@ -2,6 +2,13 @@
 
 ## View
 - `UIView`的指定初始化方法為`initWithFrame`
+- Just use `alloc` and `initWithFrame:` (UIView’s designated initializer).Can also use init (frame will be CGRectZero).
+```
+CGRect labelRect = CGRectMake(20, 20, 50, 30);
+UILabel *label = [[UILabel alloc] initWithFrame:labelRect];
+label.text = @”Hello!”;
+[self.view addSubview:label]; // Note self.view
+```
 - `UIView`屬性
  * `frame`：`CGRect`結構體。`CGRect`包含兩個結構體:`orgin:CGPoint` `size:CGSize`。**定義在父視圖的座標系統**
  * `bounds`：**定義在視圖自己的座標系統裡**
