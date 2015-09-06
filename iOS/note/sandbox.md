@@ -39,7 +39,11 @@ if cacheURL.count > 0 {
     println("找不到Cache folder")
 }
 
-// 找出tmp資料夾
+// App home directory所在路徑，不以/結尾
+let homeDirectory = NSHomeDirectory()
+println(homeDirectory)
+
+// App home directory下的tmp目錄所在路徑，以/結尾
 let temp = NSTemporaryDirectory()
 println(temp)
 
