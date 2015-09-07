@@ -1,3 +1,33 @@
+## Tip01 柯里化(Currying)
+
+```swift
+// currying func
+func appendSeparator(seperator: String)(string: String) -> String{
+    return string + seperator
+}
+
+let sentences = [
+    "wirte the code",
+    "change the world"
+]
+// 換行
+let appendNewlineToString = appendSeparator("\n")
+var text = ""
+for s in sentences {
+    text += appendNewlineToString(string: s)
+}
+println(text)
+
+// 加入分號
+let appendSemicolonToString = appendSeparator(";")
+text = ""
+for s in sentences {
+    text += appendSemicolonToString(string: s)
+}
+println(text)
+```
+
+
 ## Tip06 Optional Chaining
 - 在Optional Chaining中，出現任一個?的時候都可能會遇到nil而提前返回
 - 定義的時候，並沒有寫`play()`的返回，就表示這個方法返回`Void`，也可以寫成一對小括號`()`
