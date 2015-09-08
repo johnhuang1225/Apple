@@ -1,5 +1,7 @@
 ## Tip01 柯里化(Currying)
-
+- example
+ - [Ole Begemann](http://oleb.net/blog/2014/07/swift-instance-methods-curried-functions/?utm_campaign=iOS_Dev_Weekly_Issue_157&utm_medium=email&utm_source=iOS%2BDev%2BWeekly)
+ - [Curried Functions in Swift](http://ijoshsmith.com/2014/06/09/curried-functions-in-swift/)
 ```swift
 // currying func
 func appendSeparator(seperator: String)(string: String) -> String{
