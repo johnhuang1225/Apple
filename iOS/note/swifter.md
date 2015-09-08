@@ -1,7 +1,7 @@
 ## Tip01 柯里化(Currying)
-- example
- - [Ole Begemann](http://oleb.net/blog/2014/07/swift-instance-methods-curried-functions/?utm_campaign=iOS_Dev_Weekly_Issue_157&utm_medium=email&utm_source=iOS%2BDev%2BWeekly)
- - [Curried Functions in Swift](http://ijoshsmith.com/2014/06/09/curried-functions-in-swift/)
+ - example
+  - [Ole Begemann](http://oleb.net/blog/2014/07/swift-instance-methods-curried-functions/?utm_campaign=iOS_Dev_Weekly_Issue_157&utm_medium=email&utm_source=iOS%2BDev%2BWeekly)
+  - [Curried Functions in Swift](http://ijoshsmith.com/2014/06/09/curried-functions-in-swift/)
 ```swift
 // currying func
 func appendSeparator(seperator: String)(string: String) -> String{
@@ -29,6 +29,28 @@ for s in sentences {
 println(text)
 ```
 
+
+## Tip04 多元組(Tuple)
+- **在Swfit中，任何東西都是放在多元組裡的**
+
+```swift
+// 在Swfit中，任何東西都是放在多元組裡的
+var num = 42
+println(num) //42
+println(num.0.0.0.0) //42
+
+
+func swapMe<T>(inout a: T, inout b: T) {
+    (a,b) = (b,a)
+}
+
+var one = 11
+var two = 22
+println("Before swapMe() one:\(one), two:\(two)") // Before swapMe() one:11, two:22
+
+swapMe(&one,&two)
+println("After swapMe() one:\(one), two:\(two)") // After swapMe() one:22, two:11
+```
 
 ## Tip06 Optional Chaining
 - 在Optional Chaining中，出現任一個?的時候都可能會遇到nil而提前返回
