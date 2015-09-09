@@ -43,3 +43,37 @@ let result = words.map({ (str: String) -> Character in
 let unique = distinct(result).sorted{$0<$1}
 println(unique)
 
+
+// =====================
+// parse JSON generic 方法
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let session = NSURLSession.sharedSession()
+    let url = NSURL(string: "https://itunes.apple.com/search?term=apple&media=software")!  
+    let dataTask = session.dataTaskWithURL(url) { (data,response, error) -> Void in  
+    		do {
+            let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as! NSDictionary
+            let results = jsonData.objectForKey("results") as! NSArray
+            for item in results {
+                let trackName: String = self.getVaule(item as! NSDictionary, fieldName: "trackName")!
+                print(trackName)
+            }
+        } catch {
+            print("Error: \(error)")
+        }
+    }
+        
+    dataTask.resume()
+}
+
+func getVaule<T>(jsonData: NSDictionary, fieldName: String) -> T? {
+    if let value: T? = jsonData.objectForKey(fieldName) as? T? {
+        return value
+    } else {
+        return nil
+    }
+}
+
+// =====================
