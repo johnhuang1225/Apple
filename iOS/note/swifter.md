@@ -52,6 +52,39 @@ swapMe(&one,&two)
 println("After swapMe() one:\(one), two:\(two)") // After swapMe() one:22, two:11
 ```
 
+## Tip05 @autoclosure和??操作符
+- @autoclosure做的事情就是把一句表達式自動封裝成一個閉包(closure)
+
+```swift
+func logIfTrue(predicate: ()->Bool) {
+    if predicate() {
+        println("true")
+    }
+}
+
+logIfTrue({ ()->Bool in
+    return 2 > 1
+})
+
+logIfTrue({ 2 > 1 })
+
+logIfTrue(){ 2 > 1 }
+
+logIfTrue{ 2 > 1 }
+
+// 改為@autoclosure寫法
+func logIfTrue(@autoclosure predicate: ()->Bool) {
+    if predicate() {
+        println("true")
+    }
+}
+
+logIfTrue(2 > 1)
+
+```
+- swift會把2>1這個表達式自動轉換為( )->Bool
+
+
 ## Tip06 Optional Chaining
 - 在Optional Chaining中，出現任一個?的時候都可能會遇到nil而提前返回
 - 定義的時候，並沒有寫`play()`的返回，就表示這個方法返回`Void`，也可以寫成一對小括號`()`
