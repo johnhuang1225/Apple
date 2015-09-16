@@ -128,6 +128,50 @@ if let result:() = playClosure(john) {
 }
 ```
 
+## Tip09 方法參數名稱省略
+- 普通方法:"匿名"第一個參數，並強制要求其他的參數名稱
+
+- class的init方法:每個參數標籤都不可省略
+```swift
+class Car {
+  init(color: UIColor, weight: Int) {
+    //...
+  }
+}
+let car = Car(color: UIColor.redColor(), weight: 10)
+
+```
+- 實例方法以及類方法:忽略略第一個參數的標籤
+```swift
+extension Car {
+  func moveTo(x: Int, y: Int) {
+    //...
+  }
+}
+car.moveTo(10, y:20)
+
+extension Car {
+  class func findACar(name: String, color: UIColor) -> Car? {
+    var result: Car?
+    //...
+    return result
+  }
+}
+let myPorsche = Car.findACar("Porsche", color: UIColor.yellowColor())
+```
+
+- 全局方法:參數名稱默認是省略的
+```swift
+func findACar(name: String, color: UIColor) -> Car? {
+  var result: Car?
+  //...
+  return result
+}
+let myFerrari = findACar("Ferrari", UIColor.redColor())
+```
+
+
+
 ## Tip14 Any & AnyObject
 - `AnyObject`可以代表任何class類型的實例。而在Swfit中所有類型，包括Array和Dictionary全部都是struct，
 並不能由AnyObject來表示，所以Apple提出了更特殊的Any
