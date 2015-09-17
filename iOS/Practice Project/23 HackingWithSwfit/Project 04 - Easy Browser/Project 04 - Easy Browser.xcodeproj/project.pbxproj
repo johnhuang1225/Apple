@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6424932C1BAA1D9A0002E277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6424932B1BAA1D9A0002E277 /* AppDelegate.swift */; };
+		6424932E1BAA1D9A0002E277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6424932D1BAA1D9A0002E277 /* ViewController.swift */; };
+		642493311BAA1D9A0002E277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6424932F1BAA1D9A0002E277 /* Main.storyboard */; };
+		642493331BAA1D9A0002E277 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642493321BAA1D9A0002E277 /* Images.xcassets */; };
+		642493361BAA1D9A0002E277 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642493341BAA1D9A0002E277 /* LaunchScreen.xib */; };
+		642493421BAA1D9A0002E277 /* Project_04___Easy_BrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642493411BAA1D9A0002E277 /* Project_04___Easy_BrowserTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6424933C1BAA1D9A0002E277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6424931E1BAA1D9A0002E277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 642493251BAA1D9A0002E277;
+			remoteInfo = "Project 04 - Easy Browser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		642493261BAA1D9A0002E277 /* Project 04 - Easy Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 04 - Easy Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6424932A1BAA1D9A0002E277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6424932B1BAA1D9A0002E277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6424932D1BAA1D9A0002E277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		642493301BAA1D9A0002E277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		642493321BAA1D9A0002E277 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		642493351BAA1D9A0002E277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6424933B1BAA1D9A0002E277 /* Project 04 - Easy BrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 04 - Easy BrowserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		642493401BAA1D9A0002E277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642493411BAA1D9A0002E277 /* Project_04___Easy_BrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_04___Easy_BrowserTests.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		642493231BAA1D9A0002E277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		642493381BAA1D9A0002E277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6424931D1BAA1D9A0002E277 = {
+			isa = PBXGroup;
+			children = (
+				642493281BAA1D9A0002E277 /* Project 04 - Easy Browser */,
+				6424933E1BAA1D9A0002E277 /* Project 04 - Easy BrowserTests */,
+				642493271BAA1D9A0002E277 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		642493271BAA1D9A0002E277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				642493261BAA1D9A0002E277 /* Project 04 - Easy Browser.app */,
+				6424933B1BAA1D9A0002E277 /* Project 04 - Easy BrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		642493281BAA1D9A0002E277 /* Project 04 - Easy Browser */ = {
+			isa = PBXGroup;
+			children = (
+				6424932B1BAA1D9A0002E277 /* AppDelegate.swift */,
+				6424932D1BAA1D9A0002E277 /* ViewController.swift */,
+				6424932F1BAA1D9A0002E277 /* Main.storyboard */,
+				642493321BAA1D9A0002E277 /* Images.xcassets */,
+				642493341BAA1D9A0002E277 /* LaunchScreen.xib */,
+				642493291BAA1D9A0002E277 /* Supporting Files */,
+			);
+			path = "Project 04 - Easy Browser";
+			sourceTree = "<group>";
+		};
+		642493291BAA1D9A0002E277 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6424932A1BAA1D9A0002E277 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6424933E1BAA1D9A0002E277 /* Project 04 - Easy BrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				642493411BAA1D9A0002E277 /* Project_04___Easy_BrowserTests.swift */,
+				6424933F1BAA1D9A0002E277 /* Supporting Files */,
+			);
+			path = "Project 04 - Easy BrowserTests";
+			sourceTree = "<group>";
+		};
+		6424933F1BAA1D9A0002E277 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				642493401BAA1D9A0002E277 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		642493251BAA1D9A0002E277 /* Project 04 - Easy Browser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 642493451BAA1D9A0002E277 /* Build configuration list for PBXNativeTarget "Project 04 - Easy Browser" */;
+			buildPhases = (
+				642493221BAA1D9A0002E277 /* Sources */,
+				642493231BAA1D9A0002E277 /* Frameworks */,
+				642493241BAA1D9A0002E277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 04 - Easy Browser";
+			productName = "Project 04 - Easy Browser";
+			productReference = 642493261BAA1D9A0002E277 /* Project 04 - Easy Browser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6424933A1BAA1D9A0002E277 /* Project 04 - Easy BrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 642493481BAA1D9A0002E277 /* Build configuration list for PBXNativeTarget "Project 04 - Easy BrowserTests" */;
+			buildPhases = (
+				642493371BAA1D9A0002E277 /* Sources */,
+				642493381BAA1D9A0002E277 /* Frameworks */,
+				642493391BAA1D9A0002E277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6424933D1BAA1D9A0002E277 /* PBXTargetDependency */,
+			);
+			name = "Project 04 - Easy BrowserTests";
+			productName = "Project 04 - Easy BrowserTests";
+			productReference = 6424933B1BAA1D9A0002E277 /* Project 04 - Easy BrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6424931E1BAA1D9A0002E277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = JohnHuang;
+				TargetAttributes = {
+					642493251BAA1D9A0002E277 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6424933A1BAA1D9A0002E277 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 642493251BAA1D9A0002E277;
+					};
+				};
+			};
+			buildConfigurationList = 642493211BAA1D9A0002E277 /* Build configuration list for PBXProject "Project 04 - Easy Browser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6424931D1BAA1D9A0002E277;
+			productRefGroup = 642493271BAA1D9A0002E277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				642493251BAA1D9A0002E277 /* Project 04 - Easy Browser */,
+				6424933A1BAA1D9A0002E277 /* Project 04 - Easy BrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		642493241BAA1D9A0002E277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642493311BAA1D9A0002E277 /* Main.storyboard in Resources */,
+				642493361BAA1D9A0002E277 /* LaunchScreen.xib in Resources */,
+				642493331BAA1D9A0002E277 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		642493391BAA1D9A0002E277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		642493221BAA1D9A0002E277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6424932E1BAA1D9A0002E277 /* ViewController.swift in Sources */,
+				6424932C1BAA1D9A0002E277 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		642493371BAA1D9A0002E277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642493421BAA1D9A0002E277 /* Project_04___Easy_BrowserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6424933D1BAA1D9A0002E277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 642493251BAA1D9A0002E277 /* Project 04 - Easy Browser */;
+			targetProxy = 6424933C1BAA1D9A0002E277 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6424932F1BAA1D9A0002E277 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				642493301BAA1D9A0002E277 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		642493341BAA1D9A0002E277 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				642493351BAA1D9A0002E277 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		642493431BAA1D9A0002E277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		642493441BAA1D9A0002E277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		642493461BAA1D9A0002E277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 04 - Easy Browser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johnhuang.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		642493471BAA1D9A0002E277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 04 - Easy Browser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johnhuang.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		642493491BAA1D9A0002E277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Project 04 - Easy BrowserTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johnhuang.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 04 - Easy Browser.app/Project 04 - Easy Browser";
+			};
+			name = Debug;
+		};
+		6424934A1BAA1D9A0002E277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Project 04 - Easy BrowserTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johnhuang.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 04 - Easy Browser.app/Project 04 - Easy Browser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		642493211BAA1D9A0002E277 /* Build configuration list for PBXProject "Project 04 - Easy Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642493431BAA1D9A0002E277 /* Debug */,
+				642493441BAA1D9A0002E277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		642493451BAA1D9A0002E277 /* Build configuration list for PBXNativeTarget "Project 04 - Easy Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642493461BAA1D9A0002E277 /* Debug */,
+				642493471BAA1D9A0002E277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		642493481BAA1D9A0002E277 /* Build configuration list for PBXNativeTarget "Project 04 - Easy BrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642493491BAA1D9A0002E277 /* Debug */,
+				6424934A1BAA1D9A0002E277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6424931E1BAA1D9A0002E277 /* Project object */;
+}
