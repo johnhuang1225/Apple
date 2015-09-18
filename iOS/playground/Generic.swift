@@ -1,4 +1,12 @@
 
+/**
+ * 泛型的sort方法
+ */
+func reverseSort<T:Comparable>(item1: T, item2 : T) -> Bool {
+    return item1 > item2
+}
+
+
 
 /**
  * 泛型的filter方法
