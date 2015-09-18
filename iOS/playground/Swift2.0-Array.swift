@@ -1,3 +1,7 @@
+/**
+ * https://www.youtube.com/watch?v=BiXYtzXNLkc
+ */
+
 
 // NEW:you can now append contents from an array passed in
 var array = ["1","2","3"]
