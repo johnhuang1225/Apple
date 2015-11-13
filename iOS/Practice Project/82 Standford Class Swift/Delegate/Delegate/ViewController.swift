@@ -12,6 +12,7 @@ class ViewController: UIViewController, MyUIViewDataSource {
     
     @IBOutlet weak var myView: MyUIView! {
         didSet { // 此property observer會在iOS啟動這個應用並加載這個storyboard時調用
+            print("此property observer會在iOS啟動這個應用並加載這個storyboard時調用")
             myView.dataSource = self
         }
     }
@@ -36,10 +37,17 @@ class ViewController: UIViewController, MyUIViewDataSource {
         return result
     }
     
+    override func loadView() {
+        super.loadView()
+        print(__FUNCTION__)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        print(__FUNCTION__)
+        
 //        myView.dataSource = self
         
     }
