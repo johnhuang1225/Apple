@@ -66,6 +66,14 @@ class MyUIView: UIView {
     var faceRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height) / 2 * scale
     }
+    
+    
+//    func scale(gesture: UIPinchGestureRecognizer) {
+//        if gesture.state == UIGestureRecognizerState.Changed {
+//            scale *= gesture.scale
+//            gesture.scale = 1
+//        }
+//    }
 
     
     // Only override drawRect: if you perform custom drawing.
