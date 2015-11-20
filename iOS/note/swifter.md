@@ -191,3 +191,38 @@ println(array[0].dynamicType) // __NSCFNumber
 println(array[1].dynamicType) // Swift._NSContiguousString
 ```
 
+
+
+## Tip30 屬性觀察
+- 儲存屬性:將會在記憶體中分配地址對屬性進行儲存
+- 計算屬性:不包括背後的儲存，只是提供set和get兩種方法
+- 在同一個類型中，屬性觀察和計算屬性試不能同時存在的。也就是說，想在一個屬性定義中同時出現set和willSet或didSet是辦不到的
+
+```swift
+class A {
+    var number: Int {
+        get {
+            print("get")
+            return 1
+        }
+        set { print("set") }
+    }
+}
+
+class B: A {
+    override var number: Int {
+        willSet{ print("willSet") }
+        didSet{ print("didSet") }
+    }
+}
+
+var b = B()
+b.number = 0
+```
+輸出結果
+get
+willSet
+set
+didSet
+
+- 注意:get首先被調用了一次，這是因為我們實現了didSet，didSet中會用到oldValue，而這個值需在整個set動作之前進行獲取並儲存待用，否則將無法確保正確性
