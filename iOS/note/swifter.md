@@ -29,6 +29,61 @@ for s in sentences {
 println(text)
 ```
 
+- Practice
+```swift
+
+class BankAccount {
+    var balance: Double = 0.0
+    func deposit(amount: Double) {
+        balance += amount
+    }
+    
+    func getSomething(a: Double, b: Double) -> Double {
+        return 0.0
+    }
+}
+
+let account = BankAccount()
+account.deposit(100)
+
+let depositor = BankAccount.deposit
+print("depositor type : \(depositor.dynamicType)")
+
+depositor(account)(100) 
+
+let something = BankAccount.getSomething
+print("getSomething type : \(something.dynamicType)")
+
+
+
+func add(a: Int)(b: Int) -> Int {
+    return a + b
+}
+
+let aa = add
+print(aa.dynamicType)
+print(add(3)(b:5))
+
+
+func add2(a: Int) -> ((Int,Int) -> Int) {
+	return { (i ,j) -> Int in
+		return a*i + j
+	}
+}
+print(add2.dynamicType)
+print(add2(3)(5,32))
+
+
+// 參考自 https://speakerdeck.com/player/4e742c5c134e40d9920d1cdab6f846e0?#
+func contains(substring: String) -> (String -> Bool) {
+	return { string -> Bool in
+		return string.characters.contains(substring)
+	}
+}
+
+input.filter(contains("@"))
+```
+
 
 ## Tip04 多元組(Tuple)
 - **在Swfit中，任何東西都是放在多元組裡的**
