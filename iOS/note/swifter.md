@@ -248,6 +248,49 @@ println(array[1].dynamicType) // Swift._NSContiguousString
 
 
 
+## Tip17 初始化方法順序
+- 子類初始化順序
+ 1. 設置子類自己需要初始化的參數`power = 10`
+ 2. 調用父類的相應的初始化方法`super.init()`
+ 3. 對從父類繼承來的屬性設置新值`name = "tiger"
+```swift
+class Cat {
+    var name: String
+    init() {
+        name = "cat"
+    }
+}
+
+class Tiger: Cat {
+    let power: Int
+    override init() {
+        power = 10
+        super.init()
+        name = "tiger"
+    }
+}
+```
+- 其中第3點是根據實際情況而定的，若不需對繼承而來的屬性做修改，則不存在第3步。在這種情況下，Swfit會自動對父類對應的init方法進行調用，如下
+```swift
+class Cat {
+    var name: String
+    init() {
+        name = "cat"
+    }
+}
+
+class Tiger: Cat {
+    let power: Int
+    override init() {
+        power = 10
+        // 不需顯式調用super.init()
+        // 不過由於是初始化的最後，Swift自動調用父類對應的init
+    }
+}
+```
+
+
+
 ## Tip30 屬性觀察
 - 儲存屬性:將會在記憶體中分配地址對屬性進行儲存
 - 計算屬性:不包括背後的儲存，只是提供set和get兩種方法
