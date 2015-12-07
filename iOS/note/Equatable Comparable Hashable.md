@@ -1,4 +1,5 @@
-- [參考網址](http://www.codedata.com.tw/mobile/swift-tutorial-class-4-standard-functions/)
+- [Equatable Comparable Protocol](http://www.codedata.com.tw/mobile/swift-tutorial-class-4-standard-functions/)
+- [Hashable Protocol](http://www.swiftmi.com/topic/89.html)
 
 - Equatable
   - 判斷是否相等
@@ -51,4 +52,38 @@ var p2 = Person("jessica", 35)
 print(p1 == p2)
 print(p1 > p2)
 
+```
+
+- Hashable
+ - 實現hashValue屬性的getter
+ - sample code
+```swift
+struct Person: Equatable, Comparable, Hashable {
+    var name: String
+    var age: Int
+
+    init(_ name: String, _ age: Int) {
+        self.name = name
+        self.age = age
+    }
+
+    var hashValue: Int {
+    		get {
+    			return self.age.hashValue
+    		} 
+    }
+}
+
+func ==(lhs: Person, rhs: Person) -> Bool {
+    return lhs.hashValue == rhs.hashValue
+}
+
+func <(lhs: Person, rhs: Person) -> Bool {
+    return lhs.age < rhs.age
+}
+
+var p1 = Person("john", 35)
+var p2 = Person("jessica", 35)
+print(p1 == p2)
+print(p1 >= p2)
 ```
