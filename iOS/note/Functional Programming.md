@@ -16,6 +16,15 @@ let flatArray2 = nestArray.flatMap() { (eachArray: [String]) in
     }
 }
 print(flatArray2)
+
+//精簡寫法
+let arr = [["john"],["jessica","henry"]]
+var mapArr = arr.flatMap() {
+    $0.map() {
+        $0.characters.count
+    }
+}
+print(mapArr) // [4, 7, 5]
 ```
 
 - map
