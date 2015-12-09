@@ -1,5 +1,6 @@
 - map, flatMap, filter：Array進去，Array出來
-
+- map與flatMap的不同處：flatMap可過濾nil，map不行
+- 
 - flatMap
   - flatMap的參數為Array
   - 若要針對flat後的結果操作，需再另外使用map
@@ -29,12 +30,17 @@ var mapArr = arr.flatMap() {
 }
 print(mapArr) // [4, 7, 5]
 
-// 忽略空值
-let possibles: [Int?] = [1, 2, nil, 3, nil, 5]
-let rr = possibles.flatMap() {
-    $0
+// flatMap可過濾nil
+var array: [Int?] = [1, 3, nil, 5, nil]
+let after_map = array.map() {
+	$0
 }
-print(rr) // [1, 2, 3, 5]
+print(after_map) // [Optional(1), Optional(3), nil, Optional(5), nil]
+
+let after_flatMap = array.flatMap() {
+	$0
+}
+print(after_flatMap) // [1, 3, 5]
 
 
 // 
