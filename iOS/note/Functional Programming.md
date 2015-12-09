@@ -1,7 +1,10 @@
+# Tips
 - map, flatMap, filter：Array進去，Array出來
 - map與flatMap的不同處：flatMap可過濾nil，map不行
-- 
-- flatMap
+
+---
+
+# flatMap
   - flatMap的參數為Array
   - 若要針對flat後的結果操作，需再另外使用map
   - flatMap會忽略nil
@@ -59,9 +62,43 @@ let after = persons.flatMap({ $0["city"]?.componentsSeparatedByString(", ").last
 print(after)
 ```
 
-- map
+# map
 
-- reduce
+# reduce
+ - [example](http://www.juliusparishy.com/articles/2014/12/14/adopting-map-reduce-in-swift)
+```swift
+// 
+var array = ["john", "jessica", "henry", "fiona"]
+let result = array.reduce("") { (all, item) in
+    let comma = (item == array.last) ? "" : ", "
+    return "\(all)\(item)\(comma)"
+}
+print(result) //john, jessica, henry, fiona
 
-- filter
+
+
+let result2 = array.reduce("", combine: { (all, item) in
+    let comma = (item == array.last) ? "" : " - "
+    return "\(all)\(item)\(comma)"
+})
+print(result2) //john, jessica, henry, fiona
+
+// 使用reduce實作join
+func join<T: Equatable>(objs: [T], separator: String) -> String {
+	return objs.reduce("") { sum, obj in
+		let maybeSeparator = (obj == objs.last) ? "" : separator
+		return "\(sum)\(obj)\(maybeSeparator)"
+	}
+}
+let names = ["john", "jessica", "henry", "fiona"]
+let result = join(names, separator: " - ")
+print(result) //john - jessica - henry - fiona
+
+```
+
+
+
+
+
+# filter
 
