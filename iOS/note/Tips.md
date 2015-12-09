@@ -19,4 +19,12 @@ let numbers = [Int](1...10)
 print(numbers) //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
-
+- iOS9後，若要訪問http開頭的網址
+需在info.plist加上 Dictionary:NSAppTransportSecurity  Boolean:NSAllowsArbitraryLoads true
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+	<key>NSAllowsArbitraryLoads</key>
+	<true/>
+</dict>
+```
