@@ -13,5 +13,10 @@
   - assert：正式版本會無效
   - precondition：正式版或測試版都會終止運行
 
+- 另一種[Int]創建方式
+```swift
+let numbers = [Int](1...10)
+print(numbers) //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
 
 
