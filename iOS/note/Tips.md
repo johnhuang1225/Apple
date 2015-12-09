@@ -8,3 +8,10 @@
 - Enum
   - 值類型
   - 存取Enum關聯值須使用switch語句
+
+- assert precondition
+  - assert：正式版本會無效
+  - precondition：正式版或測試版都會終止運行
+
+
+
