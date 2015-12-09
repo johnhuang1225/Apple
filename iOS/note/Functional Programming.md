@@ -1,3 +1,5 @@
+- map, flatMap, filter：Array進去，Array出來
+
 - flatMap
   - flatMap的參數為Array
   - 若要針對flat後的結果操作，需再另外使用map
