@@ -66,8 +66,18 @@ print(after)
 # map
 
 # reduce
+ - recude的回傳值與$0相同
+ - [swiftgg](http://swift.gg/2015/12/10/reduce-all-the-things/)
  - [example](http://www.juliusparishy.com/articles/2014/12/14/adopting-map-reduce-in-swift)
 ```swift
+func combinator(accumulator: Int, current: Int) -> Int {
+    return accumulator + current
+}
+
+let result = [1,2,3].reduce(0, combine: combinator)
+print(result) //6
+
+
 // 
 var array = ["john", "jessica", "henry", "fiona"]
 let result = array.reduce("") { (all, item) in
