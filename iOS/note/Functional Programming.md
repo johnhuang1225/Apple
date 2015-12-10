@@ -1,6 +1,7 @@
 # Tips
 - map, flatMap, filter：Array進去，Array出來
 - map與flatMap的不同處：flatMap可過濾nil，map不行
+- reduce是map, flatMap, filter的一種擴展的形式，這三個函數能做什麼，reduce就能以另一種方式實現。reduce的基本思想是將一個序列轉換為一個不同類型的數據，期間透過一個累加器(Accumulator)持續記錄遞增狀態
 
 ---
 
