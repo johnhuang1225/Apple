@@ -105,6 +105,40 @@ let names = ["john", "jessica", "henry", "fiona"]
 let result = join(names, separator: " - ")
 print(result) //john - jessica - henry - fiona
 
+
+// 一維陣列轉為二維陣列
+var array = ["john", "jessica", "henry", "fiona"]
+let result2 = array.reduce([[String]]()) { (var all: [[String]], item: String) in
+    var newArray = [String]()
+    newArray.append(item)
+    all.append(newArray)
+    return all
+}
+print(result2) //[["john"], ["jessica"], ["henry"], ["fiona"]]
+
+
+// 根據字源數目奇數偶數做區分
+var array3 = ["john", "jessica", "henry", "fiona"]
+let result3 = array3.reduce([[String]]()) { (var all: [[String]], item: String) in
+    if all.count == 0 {
+        all.insert([String](), atIndex: 0)
+        all.insert([String](), atIndex: 1)
+        if item.characters.count % 2 == 0 {
+            all[0].append(item)
+        } else {
+            all[1].append(item)
+        }
+    } else {
+        if item.characters.count % 2 == 0 {
+            all[0].append(item)
+        } else {
+            all[1].append(item)
+        }
+    }
+    return all
+}
+print(result3) // [["john"], ["jessica", "henry", "fiona"]]
+
 ```
 
 
