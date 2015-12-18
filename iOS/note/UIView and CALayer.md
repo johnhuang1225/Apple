@@ -1,5 +1,6 @@
 ## 參考
 - [kkbox](https://zonble.gitbooks.io/kkbox-ios-dev/content/core_animation/calayer.html)
+- [CALayer教程](http://blog.callmewhy.com/2014/10/15/calayers-tutorial-for-ios-introduction-to-calayers-tutorial/)
 
 -----
 ## note
