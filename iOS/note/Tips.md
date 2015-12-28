@@ -29,6 +29,10 @@ print(numbers) //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 </dict>
 ```
 
+- 使用 lazy 屬性的理由
+  - 構造期間有些屬性不能引用
+  - 構造完畢後設置一些它的屬性
+
 - 在類的屬性構造變量時，不可直接引用類的其他屬性或方法(史丹佛Video12 Dynamic Animator 31:00)
   - 兩種解決方式
     - 屬性先設置為 optional，在 viewDidLoad() 初始化
@@ -48,3 +52,4 @@ class DropViewController: UIViewController {
         return lazyCreatedDynamicAnimator
     }()
 }
+
