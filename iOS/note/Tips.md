@@ -28,3 +28,23 @@ print(numbers) //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	<true/>
 </dict>
 ```
+
+- 在類的屬性構造變量時，不可直接引用類的其他屬性或方法(史丹佛Video12 Dynamic Animator 31:00)
+  - 兩種解決方式
+    - 屬性先設置為 optional，在 viewDidLoad() 初始化
+    - 設定為 lazy 屬性，在閉包語法內初始化，把初始化變為為一個閉包的執行結果。但須注意，最好別在有使用到的參數初始化前調用
+  - code
+```swift
+class DropViewController: UIViewController {
+    @IBOutlet weak var gameView: UIView!
+    
+    let gravity = UIGravityBehavior()
+    
+    // 這行會有錯誤，不能在這邊引用屬性和方法
+    // var animator: UIDynamicAnimator(referenctView: gameView)
+
+    lazy var animator: UIDynamicAnimator = {
+        let lazyCreatedDynamicAnimator = UIDynamicAnimator(referenctView: self.gameView)
+        return lazyCreatedDynamicAnimator
+    }()
+}
