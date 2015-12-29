@@ -52,4 +52,8 @@ class DropViewController: UIViewController {
         return lazyCreatedDynamicAnimator
     }()
 }
+```
 
+- Constraint
+ - constraint 也可以拉 Outlet 到 ViewController 中
+ - 若在 constraint 有變動 例如(Offsets)可能造成 layout改變，必須呼叫 `view.setNeedsUpdateConstraints()`，但真正改變結果是 `view.layoutIfNeeded()`。constraint有變更，呼叫`layoutIfNeeded()`才有意義（HackNTU week11）
