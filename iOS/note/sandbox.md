@@ -1,6 +1,16 @@
 
 ## Sandbox
 
+### HackNTU week5 note Sandbox
+  1. **Bundle Container**：所有檔案連自己的App都無法寫入，只能讀取
+  2. **Data Container**：可以寫入
+    - `Documents`
+    - `Library`
+    - `Temp`
+  3. **iCloud Container**：
+
+---
+
 - iOS File System
   - Root Folder
     - Photo
