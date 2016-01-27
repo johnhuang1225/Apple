@@ -26,7 +26,7 @@
 
   - 輸入 Podfile 內容
 ```txt
-platform : ios, '8.0'
+platform :ios, '8.0'
 
 pod 'Alamofire', '~> 1.2.0'
 pod 'KGFloatingDrawer', '~> 0.1.3'
