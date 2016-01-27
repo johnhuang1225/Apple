@@ -1,28 +1,28 @@
 
 - iOS CocoaPods 安裝
   - 查看版本
-    - `>ruby -v`
+    - `> ruby -v`
 
   - 安裝cocoapods
-    - >sudo gem install cocoapods
+    - `> sudo gem install cocoapods`
 
   - 安裝完成後會多一個指令 pod
-    - >pod
+    - `> pod`
 
   - 更新 pod 相關資訊
-    - >pod setup
+    - `> pod setup`
 
   - 搜尋 Alamofire
-    - >pod search Alamofire
+    - `> pod search Alamofire`
 
   - 測試某個 pod, 自動下載 sample 檔案
-    - >pod try Alamofire
+    - `> pod try Alamofire`
 
   - 在專案下新增 pod file
-    - >touch Podfile
+    - `> touch Podfile`
 
   - 編輯 Podfile
-    - >vi Podfile
+    - `> vi Podfile`
 
   - 輸入 Podfile 內容
 ```txt
@@ -34,7 +34,7 @@ pod 'KGFloatingDrawer', '~> 0.1.3'
 use_frameworks!
 ```
   - 存檔Podfile後,安裝套件
-    - >pod install
+    - `> pod install`
 
 
 ---
